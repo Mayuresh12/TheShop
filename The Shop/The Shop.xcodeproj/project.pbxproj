@@ -13,7 +13,20 @@
 		EAD76F3C204BFEA2003A6FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD76F3B204BFEA2003A6FE4 /* Assets.xcassets */; };
 		EAD76F3F204BFEA2003A6FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD76F3D204BFEA2003A6FE4 /* LaunchScreen.storyboard */; };
 		EAD76F49204C04CF003A6FE4 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD76F48204C04CF003A6FE4 /* CurrencyTxtField.swift */; };
+		EAD76F51204D38C6003A6FE4 /* The_ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD76F50204D38C6003A6FE4 /* The_ShopTests.swift */; };
+		EAD76F5A204D39A7003A6FE4 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD76F59204D39A7003A6FE4 /* Wage.swift */; };
+		EAD76F5B204D3A85003A6FE4 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD76F59204D39A7003A6FE4 /* Wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD76F53204D38C6003A6FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD76F29204BFEA2003A6FE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD76F30204BFEA2003A6FE4;
+			remoteInfo = "The Shop";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EAD76F31204BFEA2003A6FE4 /* The Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		EAD76F3E204BFEA2003A6FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD76F40204BFEA2003A6FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD76F48204C04CF003A6FE4 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
+		EAD76F4E204D38C6003A6FE4 /* The ShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The ShopTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD76F50204D38C6003A6FE4 /* The_ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_ShopTests.swift; sourceTree = "<group>"; };
+		EAD76F52204D38C6003A6FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD76F59204D39A7003A6FE4 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EAD76F2E204BFEA2003A6FE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD76F4B204D38C6003A6FE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD76F33204BFEA2003A6FE4 /* The Shop */,
+				EAD76F4F204D38C6003A6FE4 /* The ShopTests */,
 				EAD76F32204BFEA2003A6FE4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD76F31204BFEA2003A6FE4 /* The Shop.app */,
+				EAD76F4E204D38C6003A6FE4 /* The ShopTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 		EAD76F33204BFEA2003A6FE4 /* The Shop */ = {
 			isa = PBXGroup;
 			children = (
+				EAD76F58204D3993003A6FE4 /* Model */,
 				EAD76F47204C048A003A6FE4 /* Views */,
 				EAD76F46204C031C003A6FE4 /* Controller */,
 				EAD76F34204BFEA2003A6FE4 /* AppDelegate.swift */,
@@ -83,6 +110,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EAD76F4F204D38C6003A6FE4 /* The ShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD76F50204D38C6003A6FE4 /* The_ShopTests.swift */,
+				EAD76F52204D38C6003A6FE4 /* Info.plist */,
+			);
+			path = "The ShopTests";
+			sourceTree = "<group>";
+		};
+		EAD76F58204D3993003A6FE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAD76F59204D39A7003A6FE4 /* Wage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +147,24 @@
 			productReference = EAD76F31204BFEA2003A6FE4 /* The Shop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EAD76F4D204D38C6003A6FE4 /* The ShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD76F55204D38C6003A6FE4 /* Build configuration list for PBXNativeTarget "The ShopTests" */;
+			buildPhases = (
+				EAD76F4A204D38C6003A6FE4 /* Sources */,
+				EAD76F4B204D38C6003A6FE4 /* Frameworks */,
+				EAD76F4C204D38C6003A6FE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD76F54204D38C6003A6FE4 /* PBXTargetDependency */,
+			);
+			name = "The ShopTests";
+			productName = "The ShopTests";
+			productReference = EAD76F4E204D38C6003A6FE4 /* The ShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +178,11 @@
 					EAD76F30204BFEA2003A6FE4 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					EAD76F4D204D38C6003A6FE4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EAD76F30204BFEA2003A6FE4;
 					};
 				};
 			};
@@ -133,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				EAD76F30204BFEA2003A6FE4 /* The Shop */,
+				EAD76F4D204D38C6003A6FE4 /* The ShopTests */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +216,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAD76F4C204D38C6003A6FE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -156,12 +231,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD76F49204C04CF003A6FE4 /* CurrencyTxtField.swift in Sources */,
+				EAD76F5A204D39A7003A6FE4 /* Wage.swift in Sources */,
 				EAD76F37204BFEA2003A6FE4 /* MainVC.swift in Sources */,
 				EAD76F35204BFEA2003A6FE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAD76F4A204D38C6003A6FE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD76F51204D38C6003A6FE4 /* The_ShopTests.swift in Sources */,
+				EAD76F5B204D3A85003A6FE4 /* Wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD76F54204D38C6003A6FE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAD76F30204BFEA2003A6FE4 /* The Shop */;
+			targetProxy = EAD76F53204D38C6003A6FE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EAD76F38204BFEA2003A6FE4 /* Main.storyboard */ = {
@@ -320,6 +413,38 @@
 			};
 			name = Release;
 		};
+		EAD76F56204D38C6003A6FE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZPYFD8M85;
+				INFOPLIST_FILE = "The ShopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayuresh.The-ShopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Shop.app/The Shop";
+			};
+			name = Debug;
+		};
+		EAD76F57204D38C6003A6FE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NZPYFD8M85;
+				INFOPLIST_FILE = "The ShopTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mayuresh.The-ShopTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/The Shop.app/The Shop";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +462,15 @@
 			buildConfigurations = (
 				EAD76F44204BFEA2003A6FE4 /* Debug */,
 				EAD76F45204BFEA2003A6FE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD76F55204D38C6003A6FE4 /* Build configuration list for PBXNativeTarget "The ShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD76F56204D38C6003A6FE4 /* Debug */,
+				EAD76F57204D38C6003A6FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -26,7 +26,7 @@ class MainVC: UIViewController {
     
     @objc func calculate(){
         
-        
+        print("I am here ")
     }
     
 
