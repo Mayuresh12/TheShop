@@ -11,6 +11,8 @@ import UIKit
 class MainVC: UIViewController {
     @IBOutlet weak var priceTxt: CurrencyTxtField!
     @IBOutlet weak var wageTxt: CurrencyTxtField!
+    @IBOutlet weak var countHoursLabel: UILabel!
+    @IBOutlet weak var hoursLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +24,31 @@ class MainVC: UIViewController {
         // selector above usedis safer as Selector("calculate ") will crash if the calculate function is not found
         wageTxt.inputAccessoryView = calcBtn
         priceTxt.inputAccessoryView = calcBtn
+        
+        countHoursLabel.isHidden = true
+        hoursLabel.isHidden = true
     }
     
     @objc func calculate(){
+        if let wageTxt = wageTxt.text, let priceTxt = priceTxt.text{
+            if let wage = Double(wageTxt), let price = Double(priceTxt){
+                view.endEditing(true)
+                countHoursLabel.isHidden = false
+                hoursLabel.isHidden = false
+                countHoursLabel.text = "\(Wage.getHours(forWage: wage, andPrice: price))"
+            }
+        }
         
-        print("I am here ")
     }
     
+    @IBAction func clearCalculatorPressed(_ sender: Any) {
+        countHoursLabel.isHidden = true
+        hoursLabel.isHidden = true
+        wageTxt.text = " "
+        priceTxt.text = " "
+        view.endEditing(false)
 
+    }
+    
 }
 

@@ -35,7 +35,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-At-ydc" customClass="CurrencyTxtField" customModule="The_Shop" customModuleProvider="target">
                                 <rect key="frame" x="21" y="259" width="334" height="40"/>
@@ -46,26 +46,62 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdu-h3-6ut">
+                                <rect key="frame" x="21" y="344" width="334" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIY-rK-1tj">
+                                <rect key="frame" x="155" y="391" width="66" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="HWb-2F-LZT"/>
+                                    <constraint firstAttribute="height" constant="21" id="u0b-ZB-a7O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kE-xc-eoN">
+                                <rect key="frame" x="20" y="699" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dF1-QT-ZB5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gp5-Li-B1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1wy-1c-NGK"/>
                             <constraint firstItem="gp5-Li-B1p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3uo-R2-Sxk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="emg-Ci-ghQ" secondAttribute="trailing" constant="20" id="Aw5-2k-txt"/>
+                            <constraint firstItem="IIY-rK-1tj" firstAttribute="top" secondItem="Bdu-h3-6ut" secondAttribute="bottom" constant="5" id="Duj-Z7-Zxs"/>
                             <constraint firstAttribute="trailing" secondItem="gp5-Li-B1p" secondAttribute="trailing" id="F7g-74-8aX"/>
+                            <constraint firstItem="9kE-xc-eoN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GQG-ed-zsq"/>
                             <constraint firstItem="gwp-At-ydc" firstAttribute="trailing" secondItem="emg-Ci-ghQ" secondAttribute="trailing" id="JjK-22-IlO"/>
                             <constraint firstItem="gwp-At-ydc" firstAttribute="leading" secondItem="emg-Ci-ghQ" secondAttribute="leading" id="T5T-yh-XYN"/>
+                            <constraint firstItem="Bdu-h3-6ut" firstAttribute="top" secondItem="gwp-At-ydc" secondAttribute="bottom" constant="45" id="Ud0-mI-6yc"/>
                             <constraint firstItem="emg-Ci-ghQ" firstAttribute="top" secondItem="I7Y-EU-etb" secondAttribute="bottom" constant="35" id="aaa-uu-tqj"/>
+                            <constraint firstItem="Bdu-h3-6ut" firstAttribute="width" secondItem="gwp-At-ydc" secondAttribute="width" id="c96-pJ-mrx"/>
                             <constraint firstItem="emg-Ci-ghQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dEB-c9-Wn7"/>
                             <constraint firstItem="I7Y-EU-etb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="dP7-XF-DqI"/>
                             <constraint firstAttribute="bottom" secondItem="gp5-Li-B1p" secondAttribute="bottom" id="ksM-8G-jHa"/>
                             <constraint firstItem="gwp-At-ydc" firstAttribute="top" secondItem="emg-Ci-ghQ" secondAttribute="bottom" constant="25" id="pzZ-Fm-tgu"/>
                             <constraint firstItem="I7Y-EU-etb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q6S-pe-4d9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9kE-xc-eoN" secondAttribute="bottom" constant="45" id="tgH-ut-kh9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9kE-xc-eoN" secondAttribute="trailing" constant="20" id="w8W-6M-iV8"/>
+                            <constraint firstItem="IIY-rK-1tj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBb-xf-p9l"/>
                             <constraint firstItem="gwp-At-ydc" firstAttribute="height" secondItem="emg-Ci-ghQ" secondAttribute="height" id="z3L-63-b0F"/>
+                            <constraint firstItem="Bdu-h3-6ut" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zNG-JT-dnE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="countHoursLabel" destination="Bdu-h3-6ut" id="d4r-Ps-TxB"/>
+                        <outlet property="hoursLabel" destination="IIY-rK-1tj" id="itA-eW-T4c"/>
                         <outlet property="priceTxt" destination="gwp-At-ydc" id="aEE-3b-hyq"/>
                         <outlet property="wageTxt" destination="emg-Ci-ghQ" id="Jm3-Xy-QNe"/>
                     </connections>
