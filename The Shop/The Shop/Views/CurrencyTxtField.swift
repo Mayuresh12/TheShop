@@ -22,9 +22,7 @@ class CurrencyTxtField: UITextField {
         formatter.locale = .current
         currencyLbl.text = formatter.currencySymbol
         addSubview(currencyLbl)
-        
-        
-        
+
     }
     override func prepareForInterfaceBuilder() {
         customizeView()
@@ -45,7 +43,6 @@ class CurrencyTxtField: UITextField {
     override func awakeFromNib() {
         super.awakeFromNib()
         customizeView()
-        
     }
 
 }

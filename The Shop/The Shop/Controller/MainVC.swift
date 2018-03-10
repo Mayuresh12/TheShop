@@ -44,10 +44,10 @@ class MainVC: UIViewController {
     @IBAction func clearCalculatorPressed(_ sender: Any) {
         countHoursLabel.isHidden = true
         hoursLabel.isHidden = true
-        wageTxt.text = " "
-        priceTxt.text = " "
         view.endEditing(false)
 
+        wageTxt.text = ""
+        priceTxt.text = ""
     }
     
 }
